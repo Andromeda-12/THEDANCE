@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thedance/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/thedance/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thedance/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/thedance/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы)." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +74,14 @@
       <option name="presentableId" value="Default" />
       <updated>1616056030433</updated>
     </task>
+    <task id="LOCAL-00001" summary="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы).">
+      <created>1616853956131</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616853956131</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,5 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="SHELVE_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы)." />
   </component>
 </project>
