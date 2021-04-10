@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы)." />
+    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы).">
+      <change afterPath="$PROJECT_DIR$/templates/main/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +33,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/bartoshmariya/THEDANCE" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1pvGDNKefApK6e4wuFw29YUObku" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,6 +51,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Пользователь\Документы\study\THEDANCE" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="GIS_LAB3_VAR3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -81,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616853956131</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы).">
+      <created>1616854160252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616854160252</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -2,4 +2,6 @@
 
 {% block content_index %}
     <h1>Главная страница</h1>
+    {% for t in teachers%}
+        <p>{{t}}</p>
 {% endblock %}
