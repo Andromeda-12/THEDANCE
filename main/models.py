@@ -13,9 +13,6 @@ class Teacher(models.Model):
     Login = models.CharField(max_length=50)
     Password = models.CharField(max_length=24)
 
-    def __str__(self):
-        return self.Name
-
 
 class Client(models.Model):
     Name = models.CharField(max_length=150)

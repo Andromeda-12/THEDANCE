@@ -13,12 +13,32 @@
 
 <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade" id="teachers" role="tabpanel" aria-labelledby="teachers-tab">
-        {% for t in teachers%}
-            <h6>{{t}}</h6>
-        {% endfor %}
+        <div class="container">
+            <div class="row h6">
+                <div class="col"><i class="bi bi-person-fill"></i></div>
+                {% for t in teachers%}
+                <div class="col">{{t.Name}}</div>
+                <div class="col">{{t.Birthdate}}</div>
+                <div class="col">{{t.Education_certificate}}</div>
+                <div class="col">{{t.Profession}}</div>
+                <div class="col">{{t.Home}}</div>
+                {% endfor %}
+            </div>
+        </div>
+
     </div>
     <div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">
-        <span>Students</span>
+        <div class="container">
+            <div class="row h6">
+                <div class="col"><i class="bi bi-file-earmark-person"></i></div>
+                {% for c in clients %}
+                <div class="col">{{c.Name}}</div>
+                <div class="col">{{c.Birthdate}}</div>
+                <div class="col">{{c.Phone}}</div>
+                <div class="col">{{c.Email}}</div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
     <div class="tab-pane fade" id="timetable" role="tabpanel" aria-labelledby="timetable-tab">
         <span>Timetable</span>
@@ -27,5 +47,4 @@
         <span>E.T.C.</span>
     </div>
 </div>
-
 {% endblock %}
