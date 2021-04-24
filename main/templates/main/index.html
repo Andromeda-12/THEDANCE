@@ -1,8 +1,31 @@
 {% extends 'main/base.html' %}
 
 {% block content_index %}
-    <h1>Главная страница</h1>
-    {% for t in teachers%}
-        <p>{{t}}</p>
-    {% endfor %}
+<h1>Главная страница</h1>
+<nav>
+    <div class="nav nav-tabs" id="myTab" role="tablist">
+        <button class="nav-link" id="teachers-tab" data-bs-toggle="tab" data-bs-target="#teachers" type="button" role="tab" aria-controls="teachers" aria-selected="false">Учителя</button>
+        <button class="nav-link" id="students-tab" data-bs-toggle="tab" data-bs-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">Ученики</button>
+        <button class="nav-link" id="timetable-tab" data-bs-toggle="tab" data-bs-target="#timetable" type="button" role="tab" aria-controls="timetable" aria-selected="false">Расписание</button>
+        <button class="nav-link" id="etc-tab" data-bs-toggle="tab" data-bs-target="#etc" type="button" role="tab" aria-controls="etc" aria-selected="false">Прочее</button>
+    </div>
+</nav>
+
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade" id="teachers" role="tabpanel" aria-labelledby="teachers-tab">
+        {% for t in teachers%}
+            <h6>{{t}}</h6>
+        {% endfor %}
+    </div>
+    <div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">
+        <span>Students</span>
+    </div>
+    <div class="tab-pane fade" id="timetable" role="tabpanel" aria-labelledby="timetable-tab">
+        <span>Timetable</span>
+    </div>
+    <div class="tab-pane fade" id="etc" role="tabpanel" aria-labelledby="etc-tab">
+        <span>E.T.C.</span>
+    </div>
+</div>
+
 {% endblock %}
