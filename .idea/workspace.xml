@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="добавена часть авторизации пользователей (без связи с данными).">
+    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="удалены комменты">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -93,6 +105,9 @@
       <option name="presentableId" value="Default" />
       <updated>1616056030433</updated>
       <workItem from="1619239214873" duration="14294000" />
+      <workItem from="1619344562739" duration="641000" />
+      <workItem from="1619495623718" duration="8060000" />
+      <workItem from="1619508815081" duration="3985000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы).">
       <created>1616853956131</created>
@@ -136,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619273649719</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="удалены комменты">
+      <created>1619344605032</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1619344605032</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +210,7 @@
     <MESSAGE value="Фикс ошибок. Исправление отображения на странице." />
     <MESSAGE value="Изменен дизайн главной страницы. Добавлен новый функционал для дальнейших разработок." />
     <MESSAGE value="добавена часть авторизации пользователей (без связи с данными)." />
-    <option name="LAST_COMMIT_MESSAGE" value="добавена часть авторизации пользователей (без связи с данными)." />
+    <MESSAGE value="удалены комменты" />
+    <option name="LAST_COMMIT_MESSAGE" value="удалены комменты" />
   </component>
 </project>

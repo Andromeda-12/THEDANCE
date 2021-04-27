@@ -1,0 +1,70 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<nav class="m-3">
+    <div class="nav nav-tabs" id="myTab" role="tablist">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="teachers" aria-selected="false">Личные данные</button>
+        <button class="nav-link" id="style-tab" data-bs-toggle="tab" data-bs-target="#style" type="button" role="tab" aria-controls="students" aria-selected="false">Танцевальные направления</button>
+        <button class="nav-link" id="timetable-tab" data-bs-toggle="tab" data-bs-target="#timetable" type="button" role="tab" aria-controls="timetable" aria-selected="false">Расписание</button>
+        <button class="nav-link" id="etc-tab" data-bs-toggle="tab" data-bs-target="#etc" type="button" role="tab" aria-controls="etc" aria-selected="false">Прочее</button>
+    </div>
+</nav>
+
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="container">
+            <div class="list-group list-group-horizontal m-3">
+                <span class="list-group-item"><i class="bi bi-hash"></i></span>
+                <span class="list-group-item">ФИО</span>
+                <span class="list-group-item">{{client.Name}}</span>
+            </div>
+            <div class="list-group list-group-horizontal m-3">
+                <span class="list-group-item"><i class="bi bi-calendar-event"></i></span>
+                <span class="list-group-item">Дата рождения</span>
+                <span class="list-group-item">{{client.Birthdate}}</span>
+            </div>
+            <div class="list-group list-group-horizontal m-3">
+                <span class="list-group-item"><i class="bi bi-credit-card-2-front"></i></span>
+                <span class="list-group-item">Документ удостоверяющий личность</span>
+                <span class="list-group-item">{{client.Passport}}</span>
+            </div>
+            <div class="list-group list-group-horizontal m-3">
+                <span class="list-group-item"><i class="bi bi-phone"></i></span>
+                <span class="list-group-item">Контактный номер</span>
+                <span class="list-group-item">{{client.Phone}}</span>
+            </div>
+            <div class="list-group list-group-horizontal m-3">
+                <span class="list-group-item"><i class="bi bi-at"></i></span>
+                <span class="list-group-item">Почтовый ящик</span>
+                <span class="list-group-item">{{client.Email}}</span>
+            </div>
+<!--            <div class="row h6">-->
+<!--                <div class="col"><i class="bi bi-person-fill"></i></div>-->
+<!--                {% for t in teachers%}-->
+<!--                <div class="col">{{t.Name}}</div>-->
+<!--                <div class="col">{{t.Birthdate}}</div>-->
+<!--                <div class="col">{{t.Education_certificate}}</div>-->
+<!--                <div class="col">{{t.Profession}}</div>-->
+<!--                <div class="col">{{t.Home}}</div>-->
+<!--                {% endfor %}-->
+<!--            </div>-->
+        </div>
+
+    </div>
+    <div class="tab-pane fade" id="style" role="tabpanel" aria-labelledby="style-tab">
+        <div class="card m-2">
+          <h4 class="card-header">Style.Name</h4>
+          <div class="card-body">
+            <p>Style.Description</p>
+              <p>Style.TrainerID</p>
+          </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="timetable" role="tabpanel" aria-labelledby="timetable-tab">
+        <span>Тут будет находиться расписание конкретного клиента</span>
+    </div>
+    <div class="tab-pane fade" id="etc" role="tabpanel" aria-labelledby="etc-tab">
+        <span>E.T.C.</span>
+    </div>
+</div>
+{% endblock %}

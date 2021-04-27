@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 # Create your models here.
@@ -13,6 +14,9 @@ class Teacher(models.Model):
     Login = models.CharField(max_length=50)
     Password = models.CharField(max_length=24)
 
+    def get_adsolute_url(self):
+        return reverse('worker', kwargs={'login': self.Login})
+
 
 class Client(models.Model):
     Name = models.CharField(max_length=150)
@@ -22,6 +26,9 @@ class Client(models.Model):
     Email = models.EmailField()
     Login = models.CharField(max_length=50)
     Password = models.CharField(max_length=24)
+
+    def get_adsolute_url(self):
+        return reverse('client', kwargs={'login': self.Login})
 
 
 class Style(models.Model):
@@ -43,7 +50,6 @@ class Payment(models.Model):
     StyleID = models.ForeignKey(Style, on_delete=models.CASCADE)
     Cost = models.IntegerField()
     Payment_date = models.DateField()
-
 
 # field = models.{field_type}('name_of_field', max_lenght, e.t.c.)
 # def __str__(self):
