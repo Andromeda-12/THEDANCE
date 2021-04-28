@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<form class="row g-3 m-5" method="POST">
+    {% csrf_token %}
+    <div class="col-12">
+        <label for="name" class="form-label">Имя</label>
+        <input type="text" class="form-control" id="name" name="name">
+    </div>
+    <div class="col-md-6">
+        <label for="email" class="form-label">Почта</label>
+        <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="col-md-6">
+        <label for="phone" class="form-label">Контактный номер</label>
+        <input type="text" class="form-control" id="phone" name="phone">
+    </div>
+    <div class="col-6">
+        <label for="date" class="form-label">Дата рождения</label>
+        <input type="date" class="form-control" id="date" name="date" placeholder="1234 Main St">
+    </div>
+    <div class="col-6">
+        <label for="passport" class="form-label">Паспорт</label>
+        <input type="text" class="form-control" id="passport" name="passport" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-12 m-3">
+        <button type="submit" class="btn btn-outline-primary">Зарегестрироваться</button>
+    </div>
+</form>
+{% endblock %}

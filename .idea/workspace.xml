@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="удалены комменты">
+    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/client.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thedance/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/thedance/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thedance/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/thedance/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +50,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1pvGDNKefApK6e4wuFw29YUObku" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -107,7 +115,10 @@
       <workItem from="1619239214873" duration="14294000" />
       <workItem from="1619344562739" duration="641000" />
       <workItem from="1619495623718" duration="8060000" />
-      <workItem from="1619508815081" duration="3985000" />
+      <workItem from="1619508815081" duration="14026000" />
+      <workItem from="1619528692765" duration="4307000" />
+      <workItem from="1619588573086" duration="9245000" />
+      <workItem from="1619612912903" duration="4813000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы).">
       <created>1616853956131</created>
@@ -158,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619344605032</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="...">
+      <created>1619512899892</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1619512899892</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +229,7 @@
     <MESSAGE value="Изменен дизайн главной страницы. Добавлен новый функционал для дальнейших разработок." />
     <MESSAGE value="добавена часть авторизации пользователей (без связи с данными)." />
     <MESSAGE value="удалены комменты" />
-    <option name="LAST_COMMIT_MESSAGE" value="удалены комменты" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
 </project>

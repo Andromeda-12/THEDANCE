@@ -14,7 +14,7 @@
 <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade" id="teachers" role="tabpanel" aria-labelledby="teachers-tab">
         <div class="container">
-            <div class="row h6">
+            <div class="row">
                 <div class="col"><i class="bi bi-person-fill"></i></div>
                 {% for t in teachers%}
                 <div class="col">{{t.Name}}</div>
@@ -28,7 +28,7 @@
     </div>
     <div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">
         <div class="container">
-            <div class="row h6">
+            <div class="row">
                 <div class="col"><i class="bi bi-file-earmark-person"></i></div>
                 {% for c in clients %}
                 <div class="col">{{c.Name}}</div>

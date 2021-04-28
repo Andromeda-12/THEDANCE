@@ -1,9 +1,5 @@
 from django.contrib import admin
-from .models import Teacher
-from .models import Client
-from .models import Style
-from .models import Schedule
-from .models import Payment
+from .models import *
 
 # Register your models here.
 admin.site.register(Teacher)

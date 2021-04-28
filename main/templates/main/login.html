@@ -1,0 +1,42 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<div class="p-5 row">
+    <div class="col-6 p-3" id="client">
+        <p class="h3 text-center">Клиент</p>
+        <form method="POST" action="{% url 'home' %}">
+        {% csrf_token %}
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-hash"></i></span>
+                <span class="input-group-text" id="client_login">Login</span>
+                <input type="text" class="form-control" placeholder="Введите имя пользователя" aria-label="Login" aria-describedby="login" name="c_login">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                <span class="input-group-text" id="client_password">Password</span>
+                <input type="password" class="form-control" placeholder="Введите пароль" aria-label="Password" aria-describedby="password" name="c_password">
+            </div>
+            <a href="{% url 'client' user.id %}" type="submit" class="btn btn-primary">Sign in</a>
+        </form>
+    </div>
+    <div class="col-6 p-3" id="worker">
+        <p class="h3 text-center">Сотрудник</p>
+        <form method="POST" action="{% url 'home' %}">
+        {% csrf_token %}
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-hash"></i></span>
+                <span class="input-group-text" id="worker_login">Login</span>
+                <input type="text" class="form-control" placeholder="Введите имя пользователя" aria-label="Login" aria-describedby="login" name="w_login">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                <span class="input-group-text" id="worker_password">Password</span>
+                <input type="password" class="form-control" placeholder="Введите пароль" aria-label="Password" aria-describedby="password" name="w_password">
+            </div>
+            <a href="{% url 'worker' user.id %}" type="submit" class="btn btn-primary">Sign in</a>
+        </form>
+    </div>
+</div>
+<div class="text-center mb-5">
+    <a href="{% url 'register' %}" class="lead text-center">Ещё не зарегестрированы?! Тогда вам сюда.</a>
+</div>
+{% endblock %}

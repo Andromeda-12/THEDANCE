@@ -14,8 +14,8 @@ class Teacher(models.Model):
     Login = models.CharField(max_length=50)
     Password = models.CharField(max_length=24)
 
-    def get_adsolute_url(self):
-        return reverse('worker', kwargs={'login': self.Login})
+    def get_absolute_url(self):
+        return reverse('worker', kwargs={'id': self.id})
 
 
 class Client(models.Model):
@@ -27,8 +27,11 @@ class Client(models.Model):
     Login = models.CharField(max_length=50)
     Password = models.CharField(max_length=24)
 
-    def get_adsolute_url(self):
-        return reverse('client', kwargs={'login': self.Login})
+    def get_absolute_url(self):
+        return reverse('client', kwargs={'id': self.id})
+
+    # def get_absolute_url(self):
+    #     return "/main/%s" % self.Login
 
 
 class Style(models.Model):

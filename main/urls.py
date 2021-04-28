@@ -1,8 +1,10 @@
 from django.urls import path, re_path
 from . import views
 
-urlpatterns = [
+urlpatterns = (
     path('', views.index, name='home'),
-    path('', views.sing_in, name='sing_in'),
-    path('client-<str:login>', views.client_info, name='client')
-]
+    path('register', views.register, name='register'),
+    path('login/', views.login, name='login'),
+    path('client/<str:id>', views.client_info, name='client'),
+    path('worker/<str:id>', views.worker_info, name='worker')
+)
