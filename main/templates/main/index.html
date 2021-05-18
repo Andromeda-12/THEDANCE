@@ -1,4 +1,6 @@
 {% extends 'main/base.html' %}
+{% load static %}
+
 
 {% block content %}
 <h1>Главная страница</h1>
@@ -28,15 +30,28 @@
     </div>
     <div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">
         <div class="container">
-            <div class="row">
-                <div class="col"><i class="bi bi-file-earmark-person"></i></div>
+            <table class="table table-sm table-striped table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Birthdate</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Email</th>
+                </tr>
+                </thead>
+                <tbody>
                 {% for c in clients %}
-                <div class="col">{{c.Name}}</div>
-                <div class="col">{{c.Birthdate}}</div>
-                <div class="col">{{c.Phone}}</div>
-                <div class="col">{{c.Email}}</div>
+                <tr>
+                    <th scope="row">{{c.id}}</th>
+                    <td>{{c.Name}}</td>
+                    <td>{{c.Birthdate}}</td>
+                    <td>{{c.Phone}}</td>
+                    <td>{{c.Email}}</td>
+                </tr>
                 {% endfor %}
-            </div>
+                </tbody>
+            </table>
         </div>
     </div>
     <div class="tab-pane fade" id="timetable" role="tabpanel" aria-labelledby="timetable-tab">

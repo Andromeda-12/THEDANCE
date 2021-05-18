@@ -1,42 +1,52 @@
 {% extends 'main/base.html' %}
+{% load static %}
+
 {% block content %}
-<div class="p-5 row">
-    <div class="col-6 p-3" id="client">
-        <p class="h3 text-center">Клиент</p>
+<section>
+    <div class="col mt-5 mb-5">
         <form method="POST" action="{% url 'home' %}">
-        {% csrf_token %}
-            <div class="input-group mb-3">
-                <span class="input-group-text"><i class="bi bi-hash"></i></span>
-                <span class="input-group-text" id="client_login">Login</span>
-                <input type="text" class="form-control" placeholder="Введите имя пользователя" aria-label="Login" aria-describedby="login" name="c_login">
+            <div class="card">
+                <div class="card-header text-center">Клиент</div>
+                <div class="card-body">
+                    {% csrf_token %}
+                    <div class="form-floating mb-1">
+                        <input type="text" class="form-control" id="client_login">
+                        <label for="client_login">Login</label>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input type="password" class="form-control" id="client_password">
+                        <label for="client_password">Password</label>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="{% url 'client' user.id %}" type="submit" class="btn btn-primary">Sign in</a>
+                </div>
             </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                <span class="input-group-text" id="client_password">Password</span>
-                <input type="password" class="form-control" placeholder="Введите пароль" aria-label="Password" aria-describedby="password" name="c_password">
-            </div>
-            <a href="{% url 'client' user.id %}" type="submit" class="btn btn-primary">Sign in</a>
         </form>
     </div>
-    <div class="col-6 p-3" id="worker">
-        <p class="h3 text-center">Сотрудник</p>
+    <div class="col mt-5 mb-5">
         <form method="POST" action="{% url 'home' %}">
-        {% csrf_token %}
-            <div class="input-group mb-3">
-                <span class="input-group-text"><i class="bi bi-hash"></i></span>
-                <span class="input-group-text" id="worker_login">Login</span>
-                <input type="text" class="form-control" placeholder="Введите имя пользователя" aria-label="Login" aria-describedby="login" name="w_login">
+            <div class="card">
+                <div class="card-header text-center">Сотрудник</div>
+                <div class="card-body">
+                    {% csrf_token %}
+                    <div class="form-floating mb-1">
+                        <input type="text" class="form-control" id="worker_login">
+                        <label for="worker_login">Login</label>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input type="password" class="form-control" id="worker_password">
+                        <label for="worker_password">Password</label>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="{% url 'worker' user.id %}" type="submit" class="btn btn-primary">Sign in</a>
+                </div>
             </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                <span class="input-group-text" id="worker_password">Password</span>
-                <input type="password" class="form-control" placeholder="Введите пароль" aria-label="Password" aria-describedby="password" name="w_password">
-            </div>
-            <a href="{% url 'worker' user.id %}" type="submit" class="btn btn-primary">Sign in</a>
         </form>
     </div>
-</div>
-<div class="text-center mb-5">
-    <a href="{% url 'register' %}" class="lead text-center">Ещё не зарегестрированы?! Тогда вам сюда.</a>
-</div>
+    <div class="text-center m-5">
+        <a href="{% url 'register' %}" class="lead text-center">Ещё не зарегестрированы?! Тогда вам сюда.</a>
+    </div>
+</section>
 {% endblock %}

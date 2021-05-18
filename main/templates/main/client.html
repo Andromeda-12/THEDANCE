@@ -1,60 +1,84 @@
 {% extends 'main/base.html' %}
+{% load static %}
 
 {% block content %}
-<nav class="m-3">
-    <div class="nav nav-tabs" id="myTab" role="tablist">
-        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="teachers" aria-selected="false">Личные данные</button>
-        <button class="nav-link" id="style-tab" data-bs-toggle="tab" data-bs-target="#style" type="button" role="tab" aria-controls="students" aria-selected="false">Танцевальные направления</button>
-        <button class="nav-link" id="timetable-tab" data-bs-toggle="tab" data-bs-target="#timetable" type="button" role="tab" aria-controls="timetable" aria-selected="false">Расписание</button>
-        <button class="nav-link" id="etc-tab" data-bs-toggle="tab" data-bs-target="#etc" type="button" role="tab" aria-controls="etc" aria-selected="false">Прочее</button>
-    </div>
-</nav>
-
-<div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <div class="container">
-            <div class="list-group list-group-horizontal m-3">
-                <span class="list-group-item"><i class="bi bi-hash"></i></span>
-                <span class="list-group-item">ФИО</span>
-                <span class="list-group-item">{{user.Name}}</span>
-            </div>
-            <div class="list-group list-group-horizontal m-3">
-                <span class="list-group-item"><i class="bi bi-calendar-event"></i></span>
-                <span class="list-group-item">Дата рождения</span>
-                <span class="list-group-item">{{user.Birthdate}}</span>
-            </div>
-            <div class="list-group list-group-horizontal m-3">
-                <span class="list-group-item"><i class="bi bi-credit-card-2-front"></i></span>
-                <span class="list-group-item">Документ удостоверяющий личность</span>
-                <span class="list-group-item">{{user.Passport}}</span>
-            </div>
-            <div class="list-group list-group-horizontal m-3">
-                <span class="list-group-item"><i class="bi bi-phone"></i></span>
-                <span class="list-group-item">Контактный номер</span>
-                <span class="list-group-item">{{user.Phone}}</span>
-            </div>
-            <div class="list-group list-group-horizontal m-3">
-                <span class="list-group-item"><i class="bi bi-at"></i></span>
-                <span class="list-group-item">Почтовый ящик</span>
-                <span class="list-group-item">{{user.Email}}</span>
+<div class="accordion mt-5 mb-5" id="clientContent">
+    <div class="accordion-item">
+        <h1 class="accordion-header" id="person">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-person" aria-expanded="false" aria-controls="flush-person">
+                <p class="h2">Личные данные</p>
+            </button>
+        </h1>
+        <div id="flush-person" class="accordion-collapse collapse" aria-labelledby="person" data-bs-parent="#clientContent">
+            <div class="accordion-body">
+                <div class="container align-content-center">
+                    <div class="row">
+                        <label for="name" class="col h6">ФИО</label>
+                        <p id="name" class="col">{{user.Name}}</p>
+                    </div>
+                    <div class="row">
+                        <label for="birthdate" class="col h6">Дата рождения</label>
+                        <span id="birthdate" class="col">{{user.Birthdate}}</span>
+                    </div>
+                    <div class="row">
+                        <label for="passport" class="col h6">Документ удостоверяющий личность</label>
+                        <span id="passport" class="col">{{user.Passport}}</span>
+                    </div>
+                    <div class="row">
+                        <label for="phone" class="col h6">Контактный номер</label>
+                        <span id="phone" class="col">{{user.Phone}}</span>
+                    </div>
+                    <div class="row">
+                        <label for="email" class="col h6">Почтовый ящик</label>
+                        <span id="email" class="col">{{user.Email}}</span>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
-    <div class="tab-pane fade" id="style" role="tabpanel" aria-labelledby="style-tab">
-        <div class="card m-2">
-          <h4 class="card-header">Style.Name</h4>
-          <div class="card-body">
-            <p>Style.Description</p>
-              <p>Style.TrainerID</p>
-          </div>
+    <div class="accordion-item">
+        <h1 class="accordion-header" id="style">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-style" aria-expanded="false" aria-controls="flush-style">
+                <p class="h2">Танцевальные направления</p>
+            </button>
+        </h1>
+        <div id="flush-style" class="accordion-collapse collapse" aria-labelledby="style" data-bs-parent="#clientContent">
+            <div class="accordion-body">
+                <div class="container">
+                    <div class="card m-2">
+                        <h4 class="card-header">Style.Name</h4>
+                        <div class="card-body">
+                            <p>Style.Description</p>
+                            <p>Style.TrainerID</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="tab-pane fade" id="timetable" role="tabpanel" aria-labelledby="timetable-tab">
-        <span>Тут будет находиться расписание конкретного клиента</span>
+    <div class="accordion-item">
+        <h1 class="accordion-header" id="timetable">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-timetable" aria-expanded="false" aria-controls="flush-timetable">
+                <p class="h2">Расписание</p>
+            </button>
+        </h1>
+        <div id="flush-timetable" class="accordion-collapse collapse" aria-labelledby="timetable" data-bs-parent="#clientContent">
+            <div class="accordion-body">
+                <span>Тут будет находиться расписание конкретного клиента</span>
+            </div>
+        </div>
     </div>
-    <div class="tab-pane fade" id="etc" role="tabpanel" aria-labelledby="etc-tab">
-        <span>E.T.C.</span>
+    <div class="accordion-item">
+        <h1 class="accordion-header" id="payment">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-payment" aria-expanded="false" aria-controls="flush-payment">
+                <p class="h2">Оплата и чеки</p>
+            </button>
+        </h1>
+        <div id="flush-payment" class="accordion-collapse collapse" aria-labelledby="payment" data-bs-parent="#clientContent">
+            <div class="accordion-body">
+                <span>Оплата и чеки</span>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
