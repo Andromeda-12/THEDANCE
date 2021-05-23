@@ -3,62 +3,104 @@
 
 
 {% block content %}
-<h1>Главная страница</h1>
-<nav>
-    <div class="nav nav-tabs" id="myTab" role="tablist">
-        <button class="nav-link" id="teachers-tab" data-bs-toggle="tab" data-bs-target="#teachers" type="button" role="tab" aria-controls="teachers" aria-selected="false">Учителя</button>
-        <button class="nav-link" id="students-tab" data-bs-toggle="tab" data-bs-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">Ученики</button>
-        <button class="nav-link" id="timetable-tab" data-bs-toggle="tab" data-bs-target="#timetable" type="button" role="tab" aria-controls="timetable" aria-selected="false">Расписание</button>
-        <button class="nav-link" id="etc-tab" data-bs-toggle="tab" data-bs-target="#etc" type="button" role="tab" aria-controls="etc" aria-selected="false">Прочее</button>
-    </div>
-</nav>
-
-<div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade" id="teachers" role="tabpanel" aria-labelledby="teachers-tab">
-        <div class="container">
-            <div class="row">
-                <div class="col"><i class="bi bi-person-fill"></i></div>
-                {% for t in teachers%}
-                <div class="col">{{t.Name}}</div>
-                <div class="col">{{t.Birthdate}}</div>
-                <div class="col">{{t.Education_certificate}}</div>
-                <div class="col">{{t.Profession}}</div>
-                <div class="col">{{t.Home}}</div>
-                {% endfor %}
+<section class="image mbr-fullscreen" id="image2-2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img src="assets/images/5.jpg" alt="Mobirise">
+                    <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">Image Description</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg">
+                <div class="text-wrapper">
+                    <h3 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Image with Description</strong></h3>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        Use Mobirise website building software to create multiple sites for commercial and non-profit projects.
+                        Click on the image in this block to replace it.
+                        You can add a description below your image, or on the side.
+                        If you want to hide some of the text fields, open the Block parameters, and uncheck relevant options.</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">
-        <div class="container">
-            <table class="table table-sm table-striped table-hover">
-                <thead>
-                <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Birthdate</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Email</th>
-                </tr>
-                </thead>
-                <tbody>
-                {% for c in clients %}
-                <tr>
-                    <th scope="row">{{c.id}}</th>
-                    <td>{{c.Name}}</td>
-                    <td>{{c.Birthdate}}</td>
-                    <td>{{c.Phone}}</td>
-                    <td>{{c.Email}}</td>
-                </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+</section>
+
+<section class="course">
+    <h1>uygihojk;ojyfutydfugkpjiuytdyfguhijo</h1>
+    <p>hgfcvbnl;fdxfgchvjbknlm;;kljbhvjgcfxdgfcvb</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Заголовик</h3>
+            <p>Текст</p>
+        </div>
+        <div class="course-col">
+            <h3>Заголовик</h3>
+            <p>Текст</p>
+        </div>
+        <div class="course-col">
+            <h3>Заголовик</h3>
+            <p>Текст</p>
         </div>
     </div>
-    <div class="tab-pane fade" id="timetable" role="tabpanel" aria-labelledby="timetable-tab">
-        <span>Timetable</span>
-    </div>
-    <div class="tab-pane fade" id="etc" role="tabpanel" aria-labelledby="etc-tab">
-        <span>E.T.C.</span>
-    </div>
-</div>
+</section>
 {% endblock %}
+<!--<h1>Главная страница</h1>-->
+<!--<nav>-->
+<!--    <div class="nav nav-tabs" id="myTab" role="tablist">-->
+<!--        <button class="nav-link" id="teachers-tab" data-bs-toggle="tab" data-bs-target="#teachers" type="button" role="tab" aria-controls="teachers" aria-selected="false">Учителя</button>-->
+<!--        <button class="nav-link" id="students-tab" data-bs-toggle="tab" data-bs-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">Ученики</button>-->
+<!--        <button class="nav-link" id="timetable-tab" data-bs-toggle="tab" data-bs-target="#timetable" type="button" role="tab" aria-controls="timetable" aria-selected="false">Расписание</button>-->
+<!--        <button class="nav-link" id="etc-tab" data-bs-toggle="tab" data-bs-target="#etc" type="button" role="tab" aria-controls="etc" aria-selected="false">Прочее</button>-->
+<!--    </div>-->
+<!--</nav>-->
+
+<!--<div class="tab-content" id="myTabContent">-->
+<!--    <div class="tab-pane fade" id="teachers" role="tabpanel" aria-labelledby="teachers-tab">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col"><i class="bi bi-person-fill"></i></div>-->
+<!--                {% for t in teachers%}-->
+<!--                <div class="col">{{t.Name}}</div>-->
+<!--                <div class="col">{{t.Birthdate}}</div>-->
+<!--                <div class="col">{{t.Education_certificate}}</div>-->
+<!--                <div class="col">{{t.Profession}}</div>-->
+<!--                <div class="col">{{t.Home}}</div>-->
+<!--                {% endfor %}-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">-->
+<!--        <div class="container">-->
+<!--            <table class="table table-sm table-striped table-hover">-->
+<!--                <thead>-->
+<!--                <tr>-->
+<!--                    <th scope="col">id</th>-->
+<!--                    <th scope="col">Name</th>-->
+<!--                    <th scope="col">Birthdate</th>-->
+<!--                    <th scope="col">Phone</th>-->
+<!--                    <th scope="col">Email</th>-->
+<!--                </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                {% for c in clients %}-->
+<!--                <tr>-->
+<!--                    <th scope="row">{{c.id}}</th>-->
+<!--                    <td>{{c.Name}}</td>-->
+<!--                    <td>{{c.Birthdate}}</td>-->
+<!--                    <td>{{c.Phone}}</td>-->
+<!--                    <td>{{c.Email}}</td>-->
+<!--                </tr>-->
+<!--                {% endfor %}-->
+<!--                </tbody>-->
+<!--            </table>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="tab-pane fade" id="timetable" role="tabpanel" aria-labelledby="timetable-tab">-->
+<!--        <span>Timetable</span>-->
+<!--    </div>-->
+<!--    <div class="tab-pane fade" id="etc" role="tabpanel" aria-labelledby="etc-tab">-->
+<!--        <span>E.T.C.</span>-->
+<!--    </div>-->
+<!--</div>-->

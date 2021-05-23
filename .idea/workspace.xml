@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="добавлены страницы регистрация (для клиентов), авторизация, личный кабинет сотрудника">
+    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="дизайн страниц">
+      <change beforePath="$PROJECT_DIR$/.idea/THEDANCE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/THEDANCE.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/client.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/worker.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/worker.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thedance/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/thedance/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +60,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thedance_" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -122,6 +121,9 @@
       <workItem from="1619679650592" duration="6471000" />
       <workItem from="1619698554013" duration="9061000" />
       <workItem from="1620975747947" duration="7799000" />
+      <workItem from="1621319064038" duration="457000" />
+      <workItem from="1621495060148" duration="2135000" />
+      <workItem from="1621680990957" duration="9779000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы).">
       <created>1616853956131</created>
@@ -186,7 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619618472262</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="дизайн страниц">
+      <created>1621319481664</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1621319481664</updated>
+    </task>
+    <task id="LOCAL-00011" summary="дизайн страниц">
+      <created>1621319513869</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1621319513869</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +262,7 @@
     <MESSAGE value="удалены комменты" />
     <MESSAGE value="..." />
     <MESSAGE value="добавлены страницы регистрация (для клиентов), авторизация, личный кабинет сотрудника" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлены страницы регистрация (для клиентов), авторизация, личный кабинет сотрудника" />
+    <MESSAGE value="дизайн страниц" />
+    <option name="LAST_COMMIT_MESSAGE" value="дизайн страниц" />
   </component>
 </project>
