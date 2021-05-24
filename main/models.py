@@ -30,40 +30,23 @@ class Client(models.Model):
     def get_absolute_url(self):
         return reverse('client', kwargs={'id': self.id})
 
-    # def get_absolute_url(self):
-    #     return "/main/%s" % self.Login
-
 
 class Style(models.Model):
     Name = models.CharField(max_length=50)
-    TreinerID = models.ForeignKey(Teacher, on_delete=models.CASCADE)
+    Treiner = models.ForeignKey(Teacher, on_delete=models.CASCADE)
     Price = models.PositiveIntegerField()
     Description = models.TextField()
     clients = models.ManyToManyField(Client)
 
 
 class Schedule(models.Model):
-    StyleID = models.ForeignKey(Style, on_delete=models.CASCADE)
+    Style = models.ForeignKey(Style, on_delete=models.CASCADE)
     Weekday = models.CharField(max_length=2)
     Time = models.TimeField()
 
 
 class Payment(models.Model):
-    ClientID = models.ForeignKey(Client, on_delete=models.CASCADE)
-    StyleID = models.ForeignKey(Style, on_delete=models.CASCADE)
+    Client = models.ForeignKey(Client, on_delete=models.CASCADE)
+    Style = models.ForeignKey(Style, on_delete=models.CASCADE)
     Cost = models.IntegerField()
     Payment_date = models.DateField()
-
-# field = models.{field_type}('name_of_field', max_lenght, e.t.c.)
-# def __str__(self):
-#     return self.field, e.t.c.
-
-# python manage.py makemigrations
-# do migrations ->
-#     python manage.py migrate
-
-# python manage.py createsuperuser
-
-#   class Meta:
-#       verbose_mane = 'Учитель'
-#       verbose_name_plural = 'Учителя'

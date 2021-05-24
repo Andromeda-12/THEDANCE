@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<section>
+<section class="container mt-5 mb-5 p-5 step">
     <div class="col mt-5 mb-5">
         <form method="POST" action="{% url 'home' %}">
             <div class="card">
@@ -24,28 +24,7 @@
             </div>
         </form>
     </div>
-    <div class="col mt-5 mb-5">
-        <form method="POST" action="{% url 'home' %}">
-            <div class="card">
-                <div class="card-header text-center">Сотрудник</div>
-                <div class="card-body">
-                    {% csrf_token %}
-                    <div class="form-floating mb-1">
-                        <input type="text" class="form-control" id="worker_login">
-                        <label for="worker_login">Login</label>
-                    </div>
-                    <div class="form-floating mb-1">
-                        <input type="password" class="form-control" id="worker_password">
-                        <label for="worker_password">Password</label>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a href="{% url 'worker' user.id %}" type="submit" class="btn btn-primary">Sign in</a>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="text-center m-5">
+    <div class="text-center m-5 p-5 login">
         <a href="{% url 'register' %}" class="lead text-center">Ещё не зарегестрированы?! Тогда вам сюда.</a>
     </div>
 </section>

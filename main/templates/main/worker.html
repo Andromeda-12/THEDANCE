@@ -1,63 +1,79 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
-<div class="container">
 {% block content %}
-    <nav class="m-3">
-        <div class="nav nav-tabs" id="myTab" role="tablist">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="teachers" aria-selected="false">Личные данные</button>
-            <button class="nav-link" id="style-tab" data-bs-toggle="tab" data-bs-target="#style" type="button" role="tab" aria-controls="students" aria-selected="false">Танцевальные направления</button>
-            <button class="nav-link" id="timetable-tab" data-bs-toggle="tab" data-bs-target="#timetable" type="button" role="tab" aria-controls="timetable" aria-selected="false">Расписание</button>
-            <button class="nav-link" id="etc-tab" data-bs-toggle="tab" data-bs-target="#etc" type="button" role="tab" aria-controls="etc" aria-selected="false">Прочее</button>
-        </div>
-    </nav>
-
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="container">
-                <div class="list-group list-group-horizontal m-3">
-                    <span class="list-group-item"><i class="bi bi-hash"></i></span>
-                    <span class="list-group-item">ФИО</span>
-                    <span class="list-group-item">{{user.Name}}</span>
-                </div>
-                <div class="list-group list-group-horizontal m-3">
-                    <span class="list-group-item"><i class="bi bi-calendar-event"></i></span>
-                    <span class="list-group-item">Дата рождения</span>
-                    <span class="list-group-item">{{user.Birthdate}}</span>
-                </div>
-                <div class="list-group list-group-horizontal m-3">
-                    <span class="list-group-item"><i class="bi bi-credit-card-2-front"></i></span>
-                    <span class="list-group-item">Документ об образовании</span>
-                    <span class="list-group-item">{{user.Education_certificate}}</span>
-                </div>
-                <div class="list-group list-group-horizontal m-3">
-                    <span class="list-group-item"><i class="bi bi-phone"></i></span>
-                    <span class="list-group-item">Профессия</span>
-                    <span class="list-group-item">{{user.Profession}}</span>
-                </div>
-                <div class="list-group list-group-horizontal m-3">
-                    <span class="list-group-item"><i class="bi bi-at"></i></span>
-                    <span class="list-group-item">Домашний адрес</span>
-                    <span class="list-group-item">{{user.Home}}</span>
-                </div>
+<div class="container m-sm-auto">
+    <section class="row align-items-center step">
+        <div class="col-sm-12 col-md-6 col-sm-12">
+            <div class="item-img">
+                <img src="{% static 'img/team3.jpg'%}" alt="Mobirise">
             </div>
-
         </div>
-        <div class="tab-pane fade" id="style" role="tabpanel" aria-labelledby="style-tab">
-            <div class="card m-2">
-              <h4 class="card-header">Style.Name</h4>
-              <div class="card-body">
+        <div class="col-sm-12 col-md-6 col-sm-12">
+            <div class="text-wrapper">
+                <h1 class="col">{{user.Name}}</h1>
+                <h3 class="h3">Дата рождения</h3>
+                <span id="birthdate" class="">{{user.Birthdate}}</span>
+                <h3 class="h3">Документ об образовании</h3>
+                <span id="passport" class="">{{user.Education_certificate}}</span>
+                <h3 class="h3">Профессия</h3>
+                <span id="phone" class="">{{user.Profession}}</span>
+                <h3 class="h3">Домашний адрес</h3>
+                <span id="email" class="">{{user.Home}}</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="style" class="row step mb-5">
+        <h1 class="h1 text-center mb-5">Танцевальные направления</h1>
+        <div class="card m-sm-auto сol-sm-12 col-md-6 col-lg-3">
+            <h4 class="card-header">Style.Name</h4>
+            <div class="card-body">
                 <p>Style.Description</p>
-                  <p>Style.TrainerID</p>
-              </div>
+                <p>Style.TrainerID</p>
             </div>
         </div>
-        <div class="tab-pane fade" id="timetable" role="tabpanel" aria-labelledby="timetable-tab">
-            <span>Тут будет находиться расписание конкретного клиента</span>
+        <div class="card m-sm-auto сol-sm-12 col-md-6 col-lg-3">
+            <h4 class="card-header">Style.Name</h4>
+            <div class="card-body">
+                <p>Style.Description</p>
+                <p>Style.TrainerID</p>
+            </div>
         </div>
-        <div class="tab-pane fade" id="etc" role="tabpanel" aria-labelledby="etc-tab">
-            <span>Списки ученикков с номерами телефонов</span>
+        <div class="card m-sm-auto сol-sm-12 col-md-6 col-lg-3">
+            <h4 class="card-header">Style.Name</h4>
+            <div class="card-body">
+                <p>Style.Description</p>
+                <p>Style.TrainerID</p>
+            </div>
         </div>
-    </div>
-{% endblock %}
+    </section>
+
+    <section id="timetable" class="row align-content-center step mb-5 step2">
+        <h1 class="h1 text-center mb-5">Расписание</h1>
+
+        <div class="card m-sm-auto сol-sm-12 col-md-6 col-lg-5">
+            <div class="card-header text-center">
+                <h3 class="h3">Lesson</h3>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Time</p>
+                    <footer class="blockquote-footer">Teacher</footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card m-sm-auto сol-sm-12 col-md-6 col-lg-5">
+            <div class="card-header text-center">
+                <h3 class="h3">Lesson</h3>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Time</p>
+                    <footer class="blockquote-footer">Teacher</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
 </div>
+{% endblock %}

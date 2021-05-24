@@ -2,82 +2,86 @@
 {% load static %}
 
 {% block content %}
-<div class="accordion mt-5 mb-5" id="clientContent">
-    <div class="accordion-item">
-        <h1 class="accordion-header" id="person">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-person" aria-expanded="false" aria-controls="flush-person">
-                <p class="h2">Личные данные</p>
-            </button>
-        </h1>
-        <div id="flush-person" class="accordion-collapse collapse" aria-labelledby="person" data-bs-parent="#clientContent">
-            <div class="accordion-body">
-                <div class="container align-content-center">
-                    <div class="row">
-                        <label for="name" class="col h6">ФИО</label>
-                        <p id="name" class="col">{{user.Name}}</p>
-                    </div>
-                    <div class="row">
-                        <label for="birthdate" class="col h6">Дата рождения</label>
-                        <span id="birthdate" class="col">{{user.Birthdate}}</span>
-                    </div>
-                    <div class="row">
-                        <label for="passport" class="col h6">Документ удостоверяющий личность</label>
-                        <span id="passport" class="col">{{user.Passport}}</span>
-                    </div>
-                    <div class="row">
-                        <label for="phone" class="col h6">Контактный номер</label>
-                        <span id="phone" class="col">{{user.Phone}}</span>
-                    </div>
-                    <div class="row">
-                        <label for="email" class="col h6">Почтовый ящик</label>
-                        <span id="email" class="col">{{user.Email}}</span>
-                    </div>
-                </div>
+<div class="container m-sm-auto">
+    <section class="row align-items-center step">
+        <div class="col-sm-12 col-md-6 col-sm-12">
+            <div class="item-img">
+                <img src="{% static 'img/team2.jpg'%}" alt="Mobirise">
             </div>
         </div>
-    </div>
-    <div class="accordion-item">
-        <h1 class="accordion-header" id="style">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-style" aria-expanded="false" aria-controls="flush-style">
-                <p class="h2">Танцевальные направления</p>
-            </button>
-        </h1>
-        <div id="flush-style" class="accordion-collapse collapse" aria-labelledby="style" data-bs-parent="#clientContent">
-            <div class="accordion-body">
-                <div class="container">
-                    <div class="card m-2">
-                        <h4 class="card-header">Style.Name</h4>
-                        <div class="card-body">
-                            <p>Style.Description</p>
-                            <p>Style.TrainerID</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-sm-12 col-md-6 col-sm-12">
+            <div class="text-wrapper">
+                <h1 class="col">{{user.Name}}</h1>
+                <h3 for="birthdate" class="h3">Дата рождения</h3>
+                <span id="birthdate" class="">{{user.Birthdate}}</span>
+                <h3 for="passport" class="h3">Паспорт</h3>
+                <span id="passport" class="">{{user.Passport}}</span>
+                <h3 for="phone" class="h3">Контактный номер</h3>
+                <span id="phone" class="">{{user.Phone}}</span>
+                <h3 for="email" class="h3">Почтовый ящик</h3>
+                <span id="email" class="">{{user.Email}}</span>
             </div>
         </div>
-    </div>
-    <div class="accordion-item">
-        <h1 class="accordion-header" id="timetable">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-timetable" aria-expanded="false" aria-controls="flush-timetable">
-                <p class="h2">Расписание</p>
-            </button>
-        </h1>
-        <div id="flush-timetable" class="accordion-collapse collapse" aria-labelledby="timetable" data-bs-parent="#clientContent">
-            <div class="accordion-body">
-                <span>Тут будет находиться расписание конкретного клиента</span>
+    </section>
+
+    <section id="style" class="row step mb-5">
+        <h1 class="h1 text-center mb-5">Танцевальные направления</h1>
+        <div class="card m-sm-auto сol-sm-12 col-md-6 col-lg-3">
+            <h4 class="card-header">Style.Name</h4>
+            <div class="card-body">
+                <p>Style.Description</p>
+                <p>Style.TrainerID</p>
             </div>
         </div>
-    </div>
-    <div class="accordion-item">
-        <h1 class="accordion-header" id="payment">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-payment" aria-expanded="false" aria-controls="flush-payment">
-                <p class="h2">Оплата и чеки</p>
-            </button>
-        </h1>
-        <div id="flush-payment" class="accordion-collapse collapse" aria-labelledby="payment" data-bs-parent="#clientContent">
-            <div class="accordion-body">
-                <span>Оплата и чеки</span>
+        <div class="card m-sm-auto сol-sm-12 col-md-6 col-lg-3">
+            <h4 class="card-header">Style.Name</h4>
+            <div class="card-body">
+                <p>Style.Description</p>
+                <p>Style.TrainerID</p>
             </div>
+        </div>
+        <div class="card m-sm-auto сol-sm-12 col-md-6 col-lg-3">
+            <h4 class="card-header">Style.Name</h4>
+            <div class="card-body">
+                <p>Style.Description</p>
+                <p>Style.TrainerID</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="timetable" class="row align-content-center step">
+        <h1 class="h1 text-center mb-5">Расписание</h1>
+
+        <div class="card m-sm-auto сol-sm-12 col-md-6 col-lg-5">
+            <div class="card-header text-center">
+                <h3 class="h3">Lesson</h3>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Time</p>
+                    <footer class="blockquote-footer">Teacher</footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card m-sm-auto сol-sm-12 col-md-6 col-lg-5">
+            <div class="card-header text-center">
+                <h3 class="h3">Lesson</h3>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Time</p>
+                    <footer class="blockquote-footer">Teacher</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <div class="row justify-content-center mb-5 step" id="payment">
+        <h1 class="h1 text-center mb-5">Оплата услуг</h1>
+        <div class="col-md-12 col-lg-10">
+            <hr class="line">
+                <p class="text-center">Для оплаты определенного курса нажмите <a href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fwww.paypal.com%2Fpaypalme&state=%2Fmy%2Flanding" class="text-primary"><i>здесь</i></a>.</p>
+            <hr class="line">
         </div>
     </div>
 </div>

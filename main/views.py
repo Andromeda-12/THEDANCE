@@ -43,3 +43,7 @@ def client_info(request, id):
 def worker_info(request, id):
     worker = Teacher.objects.get(id=id)
     return render(request, 'main/worker.html', {"user": worker})
+
+
+def timetable(request):
+    return render(request, 'main/timetable.html')
