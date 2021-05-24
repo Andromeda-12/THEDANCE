@@ -33,20 +33,20 @@ class Client(models.Model):
 
 class Style(models.Model):
     Name = models.CharField(max_length=50)
-    Treiner = models.ForeignKey(Teacher, on_delete=models.CASCADE)
+    Treiner = models.ForeignKey(Teacher, on_delete=models.SET_NULL, null=True)
     Price = models.PositiveIntegerField()
     Description = models.TextField()
     clients = models.ManyToManyField(Client)
 
 
 class Schedule(models.Model):
-    Style = models.ForeignKey(Style, on_delete=models.CASCADE)
+    Style = models.ForeignKey(Style, on_delete=models.SET_NULL, null=True)
     Weekday = models.CharField(max_length=2)
     Time = models.TimeField()
 
 
 class Payment(models.Model):
-    Client = models.ForeignKey(Client, on_delete=models.CASCADE)
-    Style = models.ForeignKey(Style, on_delete=models.CASCADE)
+    Client = models.ForeignKey(Client, on_delete=models.SET_NULL, null=True)
+    Style = models.ForeignKey(Style, on_delete=models.SET_NULL, null=True)
     Cost = models.IntegerField()
     Payment_date = models.DateField()

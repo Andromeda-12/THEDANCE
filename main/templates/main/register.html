@@ -1,7 +1,10 @@
 {% extends 'main/base.html' %}
+{% load static %}
+
 
 {% block content %}
-<form class="row g-3 m-5" method="POST">
+<div class="container">
+<form class="row g-3 m-5 step step2" method="POST" id="register">
     {% csrf_token %}
     <div class="col-12">
         <label for="name" class="form-label">Имя</label>
@@ -24,7 +27,8 @@
         <input type="text" class="form-control" id="passport" name="passport" placeholder="Apartment, studio, or floor">
     </div>
     <div class="col-12 m-3">
-        <button type="submit" class="btn btn-outline-primary">Зарегестрироваться</button>
+        <button type="submit" class="btn">Зарегестрироваться</button>
     </div>
 </form>
+</div>
 {% endblock %}
