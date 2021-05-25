@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="дописан дизайн">
+    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="финальные правки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/worker.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/worker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +128,7 @@
       <workItem from="1621768570694" duration="12096000" />
       <workItem from="1621833026877" duration="15160000" />
       <workItem from="1621858876976" duration="7889000" />
-      <workItem from="1621921723059" duration="4923000" />
+      <workItem from="1621921723059" duration="7515000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы).">
       <created>1616853956131</created>
@@ -244,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621867229224</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="финальные правки">
+      <created>1621927425873</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1621927425873</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +312,7 @@
     <MESSAGE value="дизайн страниц" />
     <MESSAGE value="refactor" />
     <MESSAGE value="дописан дизайн" />
-    <option name="LAST_COMMIT_MESSAGE" value="дописан дизайн" />
+    <MESSAGE value="финальные правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="финальные правки" />
   </component>
 </project>

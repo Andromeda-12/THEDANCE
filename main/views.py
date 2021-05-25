@@ -12,8 +12,8 @@ def index(request):
 def login(request):
     global current_user
     if request.method == "POST":
-        worker = Teacher.objects.get(Login=request.POST.get("w_login"), Password=request.POST.get("w_password"))
-        client = Client.objects.get(Login=request.POST.get("c_login"), Password=request.POST.get("c_password"))
+        worker = Teacher.objects.get(Login=request.POST.get("client_login"), Password=request.POST.get("client_password"))
+        client = Client.objects.get(Login=request.POST.get("client_login"), Password=request.POST.get("client_password"))
         if len(client) > 0 and len(worker) == 0:
             current_user = client
         elif len(worker) > 0 and len(client) == 0:
