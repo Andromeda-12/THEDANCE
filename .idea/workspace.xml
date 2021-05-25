@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="refactor">
+    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="дописан дизайн">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/client.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/timetable.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/timetable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/worker.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/worker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +129,8 @@
       <workItem from="1621680990957" duration="9779000" />
       <workItem from="1621768570694" duration="12096000" />
       <workItem from="1621833026877" duration="15160000" />
-      <workItem from="1621858876976" duration="7720000" />
+      <workItem from="1621858876976" duration="7889000" />
+      <workItem from="1621921723059" duration="4923000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы).">
       <created>1616853956131</created>
@@ -232,7 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621858837443</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="дописан дизайн">
+      <created>1621867212072</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1621867212072</updated>
+    </task>
+    <task id="LOCAL-00016" summary="дописан дизайн">
+      <created>1621867229224</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1621867229224</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +306,7 @@
     <MESSAGE value="добавлены страницы регистрация (для клиентов), авторизация, личный кабинет сотрудника" />
     <MESSAGE value="дизайн страниц" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="дописан дизайн" />
+    <option name="LAST_COMMIT_MESSAGE" value="дописан дизайн" />
   </component>
 </project>

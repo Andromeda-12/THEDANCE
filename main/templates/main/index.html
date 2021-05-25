@@ -4,25 +4,25 @@
 {% block content %}
 <section class="header" id="top">
     <div class="text-box">
-        <h1 class="h1">zsxrdmkl</h1>
-        <p class="text">azsxdrctfvgbhnjmok,l</p>
+        <h1 class="h1">THE<strong>DANCE</strong></h1>
+        <p class="h4 text">Это возможность научиться двигаться грациозно, изящно и красиво, а также, открыть для себя безграничные возможности для самовыражения.</p>
+
     </div>
 </section>
 <div class="container">
     <section class="m-3" id="aboutUs">
         <div class="pt-5 pb-5">
             <div class="about">
-                <h1 class="h1"><strong>About us</strong></h1>
+                <h1 class="h1"><strong>О нас</strong></h1>
                 <h4 class="h4">
-                    An internationally renowned chef with several Nishlen stars, Bordon Ransey has opened a number of successful restaurants around the world, from the UK and France to Singapore and the United States. The very first of which was the "Retro" restaurant.
-                </h4>
+                    Мир танца, йоги, спорта «THE<strong>DANCE</strong>» — стремление к совершенству. Концепция здорового образа жизни, всестороннее духовное и физическое развитие. Слияние музыки и искусства в каждом движении. Мир тех, кто открывает новые грани познания души и тела, создавая новый темп жизни. Людей энергичных, самодостаточных, позитивных.                </h4>
             </div>
         </div>
     </section>
 
     <section class="gallery" id="gallery">
         <div class="pt-5 pb-5 justify-content-center">
-            <h1 class="h1"><strong>Gallery</strong></h1>
+            <h1 class="h1"><strong>Галерея</strong></h1>
             <div class="row step">
                 <div class="item-img col-sm-auto col-md-auto col-lg-3">
                     <img src="{% static 'img/features1.jpg' %}" alt="">
@@ -44,24 +44,23 @@
         <div class="pt-5 pb-5">
             <h1 class="h1 m-3"><strong>Преподаватели</strong></h1>
             <div class="row justify-content-center">
-                <div class="col-sm-auto col-md-auto col-lg-4">
-                    <img src="{% static 'img/team1.jpg'%}" alt="">
-                    <h3><strong>John Smith</strong></h3>
-                    <h5><strong>Фитнес-тренер</strong></h5>
-                    <p>No special actions required, all sites you make with Mobirise are mobile-friendly.</p>
-                </div>
-                <div class="col-sm-auto col-md-auto col-lg-4">
-                    <img src="{% static 'img/team2.jpg'%}" alt="">
-                    <h3><strong>Sarah Palmer</strong></h3>
-                    <h5><strong>Мастер-спорта</strong></h5>
-                    <p>Use Mobirise website building software to create multiple sites for your clients.</p>
-                </div>
+                {% for teacher in teachers %}
                 <div class="col-sm-auto col-md-auto col-lg-4">
                     <img src="{% static 'img/team3.jpg'%}" alt="">
-                    <h3><strong>Jessica Swift</strong></h3>
-                    <h5><strong>КМС по боксу</strong></h5>
-                    <p>Create multiple pages. Don't forget to set links to your pages after creating them.</p>
+                    <h3><strong>{{teacher.Name}}</strong></h3>
+                    <h5><strong>{{teacher.Profession}}</strong></h5>
                 </div>
+                {% endfor %}
+<!--                <div class="col-sm-auto col-md-auto col-lg-4">-->
+<!--                    <img src="{% static 'img/team2.jpg'%}" alt="">-->
+<!--                    <h3><strong>Sarah Palmer</strong></h3>-->
+<!--                    <h5><strong>Мастер-спорта</strong></h5>-->
+<!--                </div>-->
+<!--                <div class="col-sm-auto col-md-auto col-lg-4">-->
+<!--                    <img src="{% static 'img/team3.jpg'%}" alt="">-->
+<!--                    <h3><strong>Jessica Swift</strong></h3>-->
+<!--                    <h5><strong>КМС по боксу</strong></h5>-->
+<!--                </div>-->
             </div>
         </div>
     </section>

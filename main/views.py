@@ -36,13 +36,23 @@ def register(request):
 
 
 def client_info(request, id):
+    lesson = list()
     client = Client.objects.get(id=id)
-    return render(request, 'main/client.html', {"user": client})
+    courses = Style.objects.filter(clients__id=id)
+    for item in courses:
+        lesson = (Schedule.objects.filter(Style=item))
+    print(lesson)
+    return render(request, 'main/client.html', {"user": client, "styles": courses, "lessons": lesson})
 
 
 def worker_info(request, id):
+    lesson = list()
     worker = Teacher.objects.get(id=id)
-    return render(request, 'main/worker.html', {"user": worker})
+    courses = Style.objects.filter(Treiner__id=id)
+    for item in courses:
+        lesson = (Schedule.objects.filter(Style=item))
+    print(lesson)
+    return render(request, 'main/worker.html', {"user": worker, "styles": courses, "lessons": lesson})
 
 
 def timetable(request):
