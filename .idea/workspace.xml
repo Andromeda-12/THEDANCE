@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="финальные правки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +127,11 @@
       <workItem from="1621768570694" duration="12096000" />
       <workItem from="1621833026877" duration="15160000" />
       <workItem from="1621858876976" duration="7889000" />
-      <workItem from="1621921723059" duration="7515000" />
+      <workItem from="1621921723059" duration="8327000" />
+      <workItem from="1622092219800" duration="355000" />
+      <workItem from="1622096572031" duration="107000" />
+      <workItem from="1622253006810" duration="719000" />
+      <workItem from="1622261603220" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы).">
       <created>1616853956131</created>
@@ -249,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621927425873</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="финальные правки">
+      <created>1621930020962</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1621930020962</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

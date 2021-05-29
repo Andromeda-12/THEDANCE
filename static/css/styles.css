@@ -108,6 +108,11 @@ img{
     padding-top: 30px;
 }
 
+.login{
+    align-content: center;
+    justify-content: center;
+}
+
 .login .btn{
     align-content: center;
     justify-content: center;
