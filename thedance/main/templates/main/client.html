@@ -1,0 +1,69 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container m-sm-auto">
+    <section class="row align-items-center step">
+        <div class="col-sm-12 col-md-6 col-sm-12">
+            <div class="item-img">
+                <img src="{% static 'img/team2.jpg'%}" alt="Mobirise">
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-sm-12">
+            <div class="text-wrapper">
+                <h1 class="col">{{user.Name}}</h1>
+                <h3 for="birthdate" class="h3">Дата рождения</h3>
+                <span id="birthdate" class="">{{user.Birthdate}}</span>
+                <h3 for="passport" class="h3">Паспорт</h3>
+                <span id="passport" class="">{{user.Passport}}</span>
+                <h3 for="phone" class="h3">Контактный номер</h3>
+                <span id="phone" class="">{{user.Phone}}</span>
+                <h3 for="email" class="h3">Почтовый ящик</h3>
+                <span id="email" class="">{{user.Email}}</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="style" class="row step mb-5">
+        <h1 class="h1 text-center mb-5">Танцевальные направления</h1>
+        {% for st in styles %}
+        <div class="card m-sm-auto сol-sm-12 col-md-6 col-lg-3">
+            <h4 class="card-header">{{st.Name}}</h4>
+            <div class="card-body">
+                <p>{{st.Description}}</p>
+                <p>{{st.TrainerID}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+
+    <section id="timetable" class="row align-content-center step">
+        <h1 class="h1 text-center mb-5">Расписание</h1>
+        {% for les in lessons %}
+        <div class="step step2">
+            <div class="card m-sm-auto сol-sm-12 col-md-6 col-lg-5">
+            <div class="card-header text-center">
+                <h3 class="h3">{{les.Style.Name}}</h3>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>{{les.Weekday}}</p>
+                    <footer class="blockquote-footer">{{les.Time}}</footer>
+                </blockquote>
+            </div>
+        </div>
+        </div>
+
+        {% endfor %}
+    </section>
+
+    <div class="row justify-content-center mb-5 step" id="payment">
+        <h1 class="h1 text-center mb-5">Оплата услуг</h1>
+        <div class="col-md-12 col-lg-10">
+            <hr class="line">
+                <p class="text-center">Для оплаты определенного курса нажмите <a href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fwww.paypal.com%2Fpaypalme&state=%2Fmy%2Flanding" class="text-primary"><i>здесь</i></a>.</p>
+            <hr class="line">
+        </div>
+    </div>
+</div>
+{% endblock %}

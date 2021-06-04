@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="финальные правки">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/bartoshmariya/THEDANCE" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pvGDNKefApK6e4wuFw29YUObku" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Пользователь\Документы\study\THEDANCE" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Пользователь\Документы\study\THEDANCE" />
+      <recent name="D:\Пользователь\Документы\study\THEDANCE\main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GIS_LAB3_VAR3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="THEDANCE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../GIS_LAB3/Python_SR2" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../GIS_LAB3/Python_SR2/GIS_LAB3_VAR3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.GIS_LAB3_VAR3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Пользователь\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef5508bc-b63a-4467-8394-e9aa40404613" name="Default Changelist" comment="" />
+      <created>1616056030433</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616056030433</updated>
+      <workItem from="1619239214873" duration="14294000" />
+      <workItem from="1619344562739" duration="641000" />
+      <workItem from="1619495623718" duration="8060000" />
+      <workItem from="1619508815081" duration="14026000" />
+      <workItem from="1619528692765" duration="4307000" />
+      <workItem from="1619588573086" duration="9245000" />
+      <workItem from="1619612912903" duration="5707000" />
+      <workItem from="1619674043587" duration="340000" />
+      <workItem from="1619679650592" duration="6471000" />
+      <workItem from="1619698554013" duration="9061000" />
+      <workItem from="1620975747947" duration="7799000" />
+      <workItem from="1621319064038" duration="457000" />
+      <workItem from="1621495060148" duration="2135000" />
+      <workItem from="1621680990957" duration="9779000" />
+      <workItem from="1621768570694" duration="12096000" />
+      <workItem from="1621833026877" duration="15160000" />
+      <workItem from="1621858876976" duration="7889000" />
+      <workItem from="1621921723059" duration="8327000" />
+      <workItem from="1622092219800" duration="355000" />
+      <workItem from="1622096572031" duration="107000" />
+      <workItem from="1622253006810" duration="719000" />
+      <workItem from="1622261603220" duration="331000" />
+    </task>
+    <task id="LOCAL-00001" summary="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы).">
+      <created>1616853956131</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616853956131</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы).">
+      <created>1616854160252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616854160252</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Новая версия от 09.04.2021">
+      <created>1618036112988</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618036112988</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Фикс ошибок. Исправление отображения на странице.">
+      <created>1618134467552</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618134467552</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Изменен дизайн главной страницы. Добавлен новый функционал для дальнейших разработок.">
+      <created>1619248780961</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619248780961</updated>
+    </task>
+    <task id="LOCAL-00006" summary="добавена часть авторизации пользователей (без связи с данными).">
+      <created>1619273649719</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619273649719</updated>
+    </task>
+    <task id="LOCAL-00007" summary="удалены комменты">
+      <created>1619344605032</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1619344605032</updated>
+    </task>
+    <task id="LOCAL-00008" summary="...">
+      <created>1619512899892</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1619512899892</updated>
+    </task>
+    <task id="LOCAL-00009" summary="добавлены страницы регистрация (для клиентов), авторизация, личный кабинет сотрудника">
+      <created>1619618472262</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1619618472262</updated>
+    </task>
+    <task id="LOCAL-00010" summary="дизайн страниц">
+      <created>1621319481664</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1621319481664</updated>
+    </task>
+    <task id="LOCAL-00011" summary="дизайн страниц">
+      <created>1621319513869</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1621319513869</updated>
+    </task>
+    <task id="LOCAL-00012" summary="дизайн страниц">
+      <created>1621770429012</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1621770429012</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactor">
+      <created>1621858789970</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1621858789970</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactor">
+      <created>1621858837443</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1621858837443</updated>
+    </task>
+    <task id="LOCAL-00015" summary="дописан дизайн">
+      <created>1621867212072</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1621867212072</updated>
+    </task>
+    <task id="LOCAL-00016" summary="дописан дизайн">
+      <created>1621867229224</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1621867229224</updated>
+    </task>
+    <task id="LOCAL-00017" summary="финальные правки">
+      <created>1621927425873</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1621927425873</updated>
+    </task>
+    <task id="LOCAL-00018" summary="финальные правки">
+      <created>1621930020962</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1621930020962</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="SHELVE_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="Добавлено новое приложение. Попробовала сделать шаблон для главной страницы (для пробы)." />
+    <MESSAGE value="Новая версия от 09.04.2021" />
+    <MESSAGE value="Фикс ошибок. Исправление отображения на странице." />
+    <MESSAGE value="Изменен дизайн главной страницы. Добавлен новый функционал для дальнейших разработок." />
+    <MESSAGE value="добавена часть авторизации пользователей (без связи с данными)." />
+    <MESSAGE value="удалены комменты" />
+    <MESSAGE value="..." />
+    <MESSAGE value="добавлены страницы регистрация (для клиентов), авторизация, личный кабинет сотрудника" />
+    <MESSAGE value="дизайн страниц" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="дописан дизайн" />
+    <MESSAGE value="финальные правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="финальные правки" />
+  </component>
+</project>
